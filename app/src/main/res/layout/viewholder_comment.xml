@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="2dp"
+    tools:ignore="RtlSymmetry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/author_picture"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_slideshow"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/author_picture"
+            android:layout_toRightOf="@+id/author_picture"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"
+            tools:text="Comment"
+            android:layout_marginEnd="5dp" />
+
+        <TextView
+            android:id="@+id/channelNameComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/comment"
+            android:layout_alignStart="@+id/comment"
+            android:layout_below="@+id/comment"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            tools:text="Channel Name" />
+
+        <TextView
+            android:id="@+id/publicationDateComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            tools:text="published at" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment"
+            android:layout_toEndOf="@+id/channelNameComment"
+            android:layout_toRightOf="@+id/channelNameComment"
+            android:text=" - " />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
